@@ -8,7 +8,9 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class Colors extends Canvas {
-
+    // transient is a variables modifier used in serialization.
+    // At the time of serialization, if we don't want to save value of a particular
+    // variable in a file, then we use transient keyword.
     transient private Color color;
     private boolean rectangular;
 
