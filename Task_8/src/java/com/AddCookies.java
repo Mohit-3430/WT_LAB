@@ -17,9 +17,7 @@ public class AddCookies extends HttpServlet {
         Cookie c = new Cookie(name, value);
         response.addCookie(c);
         out.println("<html>");
-        out.println("<head>");
         out.println("<script>alert('COOKIE ADDED');</script>");
-        out.println("</head>");
         out.println("<body>");
         out.println("<h2>COOKIE DETAILS</h2>");
         out.println("<br>Name: " + c.getName());

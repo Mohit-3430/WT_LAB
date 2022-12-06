@@ -24,3 +24,6 @@ beans_explorer
 /Task_6/*
 !/Task_6/Colors.java
 
+/Demo_6/nbproject/private/
+/Demo_6/dist/
+/Demo_6/build/

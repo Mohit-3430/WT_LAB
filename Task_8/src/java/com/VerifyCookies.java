@@ -28,7 +28,7 @@ public class VerifyCookies extends HttpServlet {
         if (flag == true) {
             out.println("<body><h2>Welcome: " + c[i].getName() + "</h2></body>");
         } else {
-            out.println("<body><h2>You are not an authentic user!<  / h2 > <  / body >");
+            out.println("<body><h2>You are not an authentic user!</h2> </body>");
             out.println("</html>");
         }
     }
