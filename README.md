@@ -8,15 +8,16 @@
 
 ### Task 4 :
 
-- Enable Internet Explorer feature on edge to execute(lib.xml) [link](https://allthings.how/how-to-use-internet-explorer-in-microsoft-edge-on-windows-11/)
+- WINDOWS 11 -> Enable Internet Explorer feature on edge to execute(lib.xml) [link](https://allthings.how/how-to-use-internet-explorer-in-microsoft-edge-on-windows-11/)
+- WINDOWS 10 -> open lib.xml in Internet Explorer.
 
 ### Task 5 :
 
-- Source : [link](https://www.w3schools.com/angular/angular_routing.asp)
+- From W3Schools Ref : [link](https://www.w3schools.com/angular/angular_routing.asp)
 
 ### Task 6 :
 
-- From W3Schools Ref : [link](https://www.w3schools.com/angular/angular_routing.asp)
+- YT: [link](https://www.youtube.com/watch?v=AffS_4Mrrww)
 
 ### Task 8:
 
