@@ -11,65 +11,64 @@
     <h2>Conference Online Registration</h2>
     <p>Please fill in the form below.</p>
     <form>
-        <span class="form__section">
-            <div class="name__section">
-                <label>First Name</label>
-                <input type="Text" required>
+        <div class="name__section">
+            <label>First Name</label>
+            <input type="Text" required>
 
-                <label>Last Name</label>
-                <input type="Text" required>
-            </div>
-            <label>Email ID:</label>
-            <input type="email" required>
+            <label>Last Name</label>
+            <input type="Text" required>
+        </div>
+        <label>Email ID:</label>
+        <input type="email" required>
 
-            <label>Phone Number:</label>
-            <input type="number" required>
+        <label>Phone Number:</label>
+        <input type="number" required>
 
-            <label>Occupation:</label>
-            <select required>
-                <option value="1">Select</option>
-                <option value="2">Student</option>
-                <option value="3">Professional</option>
-                <option value="4">Faculty Member</option>
-                <option value="5">Company Representative</option>
+        <label>Occupation:</label>
+        <select required>
+            <option value="1">Select</option>
+            <option value="2">Student</option>
+            <option value="3">Professional</option>
+            <option value="4">Faculty Member</option>
+            <option value="5">Company Representative</option>
+        </select>
+        <label>Country:</label>
+        <select id="country" required onclick="getCost()">
+            <option value="1">Select</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Germany">Germany</option>
+        </select>
+        <label>Hotels</label>
+        <select required>
+            <option value="1">Select</option>
+            <option value="2">H1</option>
+            <option value="3">H2</option>
+            <option value="4">H3</option>
+            <option value="5">H4</option>
+        </select>
+
+        <label>Regestration Fee</label>
+        <div class="registration_fee">
+            <input type="checkbox" required>
+            <p>Regestration including Hotel Provision</p>
+        </div>
+        <div class="registration_fee">
+            <p>Total Payment</p>
+            <p id="cost"></p>
+        </div>
+
+        <div>
+            <label>Payment Method</label>
+            <select>
+                <option value="dc">Debit Card</option>
+                <option value="cc">Credit Card</option>
+                <option value="bd">Bank Draft</option>
             </select>
-            <label>Country:</label>
-            <select id="country" required onclick="getCost()">
-                <option value="1">Select</option>
-                <option value="India">India</option>
-                <option value="USA">USA</option>
-                <option value="UK">UK</option>
-                <option value="Germany">Germany</option>
-            </select>
-            <label>Hotels</label>
-            <select required>
-                <option value="1">Select</option>
-                <option value="2">H1</option>
-                <option value="3">H2</option>
-                <option value="4">H3</option>
-                <option value="5">H4</option>
-            </select>
+        </div>
 
-            <label>Regestration Fee</label>
-            <div class="registration_fee">
-                <input type="checkbox" required>
-                <p>Regestration including Hotel Provision</p>
-            </div>
-            <div class="registration_fee">
-                <p>Total Payment</p>
-                <p id="cost"></p>
-            </div>
-
-            <div>
-                <label>Payment Method</label>
-                <select>
-                    <option value="dc">Debit Card</option>
-                    <option value="cc">Credit Card</option>
-                    <option value="bd">Bank Draft</option>
-                </select>
-            </div>
-
-            <input type="submit" value="submit">
+        <input type="submit" value="submit">
     </form>
 </body>
 

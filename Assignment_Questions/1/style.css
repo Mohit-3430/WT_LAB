@@ -13,7 +13,7 @@ label, input, select{
 label{
     font-weight: bold;
 }
-.form__section{
+form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
