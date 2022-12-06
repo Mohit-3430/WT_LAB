@@ -25,7 +25,7 @@ Main Files:
 - Serverlet [Files](Task_8/src/java/com)
   - AddCookies.java
   - VerifyCookies.java
-- HTML [Files]
+- HTML [Files](Task_8/web/)
   - index.html (Cookie Addition)
   - VerifyCookie.html (Cookie Verification)
 - Web.xml [file](Task_8/web/WEB-INF/web.xml)
