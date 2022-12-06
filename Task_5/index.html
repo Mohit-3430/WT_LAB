@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://www.w3schools.com/angular/angular_routing.asp -->
+
+<head>
+    <title>Task 5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <p><a href="#/!">Main</a></p>
+    <a href="#!red">Red</a>
+    <br>
+    <a href="#!green">Green</a>
+
+    <p>Click on the links to change the content of the page</p>
+    <div ng-view></div>
+    <script>
+        const app = angular.module("myApp", ["ngRoute"]);
+        app.config(function ($routeProvider) {
+            $routeProvider
+                .when("/", {
+                    template: "<h1> Main </h1> <p> click on the link to change text</p>"
+                })
+                .when("/red", {
+                    template: "<h1 style='background-color:red'> Red </h1> <p style='background-color:red'> Red is Good</p>"
+                })
+                .when("/green", {
+                    template: "<h1 style='background-color:green'> Green </h1> <p style='background-color:green'> Green is Good</p>"
+                });
+        });
+    </script>
+</body>
+
+</html>

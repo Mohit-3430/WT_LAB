@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2, p{
+    margin: 0.7rem;
+}
+label, input, select{
+    margin: 0.7rem;
+}
+label{
+    font-weight: bold;
+}
+.form__section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.name__section{
+    display: flex;
+    flex-direction: row;
+}
+.registration_fee{
+    display: flex;
+    flex-direction: row;
+}

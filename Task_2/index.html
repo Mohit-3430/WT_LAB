@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <title>Form Validation</title>
+</head>
+
+<body bgcolor="skyblue">
+    <center><u>
+            <h1>registration form
+        </u></h1>
+        <form name="myform">
+            <table border="0">
+                <tr>
+                    <td>1.name</td>
+                    <td><input type="text" size="25" name="uname"></td>
+                </tr>
+                <tr>
+                    <td>2.father name</td>
+                    <td><input type="text" size="25" name="fname" OnClick="verifyName()"></td>
+                </tr>
+                <tr>
+                    <td>3.date of birth</td>
+                    <td><select name="date" OnClick="verifyFName()" OnChange="verifyDate()">
+                            <option value="select">date</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <select name="month" OnClick="verifyFName()" OnChange="verifyMonth()">
+                            <option value="select">month</option>
+                            <option value="jan">jan</option>
+                            <option value="feb">feb</option>
+                            <option value="mar">mar</option>
+                        </select>
+                        <select name="year" OnClick="verifyFName()" OnChange="verifyYear()">
+                            <option value="select">year</option>
+                            <option value="19889">1989</option>
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4.address
+                    <td><textarea rows="10" cols="20" name="addr" Onclick="verifyDOB()"></textarea>
+                </tr>
+                <tr>
+                    <td>5.gender</td>
+                    <td><input type="radio" name="gender" OnMouseMove="verifyaddr()" OnClick="setFlag()">male
+                        <input type="radio" name="gender" OnMouseMove="verifyaddr()" OnClick="setFlag()">female
+                </tr>
+                <tr>
+                    <td>6.mobile number</td>
+                    <td><input type="text" size="25" name="mob" OnClick="verifyGen()" OnKeyUp="validateMob()"></td>
+                </tr>
+                <tr>
+                    <td>7.languages known</td>
+                    <td>
+                        <table border="0">
+                            <tr>
+                                <td><input type="checkbox" name="english" size="20" OnClick="verifyMob()"
+                                        checked>english
+                                <td><input type="checkbox" name="telugu" size="20" OnClick="verifyMob()">telugu
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="tamil" size="20" OnClick="verifyMob()">tamil
+                                <td><input type="checkbox" name="hindi" size="20" OnClick="verifyMob()">hindi
+                            </tr>
+                        </table>
+                </tr>
+            </table>
+            <br>
+            <hr witdh="100%" size="25" color="black">
+            <input type="submit" value="register" OnMouseMove="verifyLan()" OnClick="register()">
+            <input type="reset" value="reset">
+        </form>
+    </center>
+    <script language="jscript">
+        var nam, flag = "select", flag1 = 0, flag2 = 0, flag3 = 0, genflag = 0, lanflag = 0, str = "", n = 0, str1 = "", str2 = "";
+        function verifyName() {
+            value = document.myform.uname.value;
+            if (value == "")
+                alert("enter ur name");
+        }
+        function verifyFName() {
+            nam = document.myform.fname.value;
+            if (nam == "")
+                alert("enter ur father's name");
+        }
+        function verifyDate() {
+            nam = document.myform.date.value;
+            if (nam != flag)
+                flag1 = 1;
+            else {
+                flag1 = 0;
+            }
+        }
+        function verifyMonth() {
+            nam = document.myform.month.value;
+            if (nam != flag)
+                flag2 = 1;
+            else {
+                flag2 = 0;
+            }
+        }
+        function verifyYear() {
+            nam = document.myform.year.value;
+            if (nam != flag)
+                flag3 = 1;
+            else {
+                flag3 = 0;
+            }
+        }
+        function verifyDOB() {
+            if (flag1 != 1 || flag2 != 1 || flag3 != 1)
+                alert("enter dob");
+        }
+        function verifyaddr() {
+            nam = document.myform.addr.value;
+            if (nam == "")
+                alert("enter ur addr");
+        }
+        function setFlag() {
+            genflag = 1;
+        }
+        function verifyGen() {
+            if (genflag == 0)
+                alert("select gender");
+        }
+        function validateMob() {
+            str = document.myform.mob.value;
+            n = str.length;
+            for (i = 0; i < n; i++) {
+                s = str.charAt(i);
+                if (s == 1 || s == 2 || s == '3' || s == '4' || s == '5' || s == '6' || s == '7' || s == '8' || s == '9' || s == '0') { }
+                else {
+                    document.myform.mob.value = str1;
+                    alert("only digits allowed");
+                    str = document.myform.mob.value;
+                }
+            }
+            if (n > 10) {
+                document.myform.mob.value = str1;
+                alert("only 10 digits allowed");
+                str = document.myform.mob.value;
+            }
+            str1 = str;
+        }
+        function verifyMob() {
+            lanflag = 1;
+            str = document.myform.mob.value;
+            n = str.length;
+            if (str == "" || n < 10)
+                alert("enter mobile no with 10 no's");
+        }
+        function verifyLan() {
+            str = document.myform.mob.value;
+            if ((lanflag == 1 || lanflag == 0) && (str != "" && str.length == 10)) { }
+            else
+                alert("enter mobile no with 10 no's ");
+        }
+        function register() {
+            document.writeln("<br><br><br><br><br><br>ur successfully registered");
+        }
+    </script>
+</body>
+
+</html>

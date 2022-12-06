@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form validation</title>
+    <style>
+        label {
+            margin: 0.5rem;
+            display: block;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Registration Form</h1>
+        <form action="#">
+            <label>Name</label>
+            <input type="text" id="uname"> <br>
+            <label>Email</label>
+            <input type="text" id="email" onclick="verifyName()">
+            <label>Mobile Number:</label>
+            <input type="number" id="phno" onclick="verifyEmail()">
+            <label>DOB:</label>
+            <input type="date" onkeydown="verifyPhno()" onclick="verifyPhno()">
+            <label>Gender:</label>
+            Male : <input type="radio" name="gender" onclick="setGenderFlag()">
+            Female: <input type="radio" name="gender" onclick="setGenderFlag()">
+            <label>Password</label>
+            <input type="password" id="password" onclick="verifyGen()">
+            <br><br>
+            <input type="submit" OnMouseMove="verifyPassword()" onclick="register()">
+        </form>
+    </center>
+    <script>
+        let name, email, phno, genderFlag, password;
+        let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+        let phnoRegex = /^[6-9]\d{9}$/
+        let nameRegex = /[a-zA-z]{6,20}/
+
+        function verifyName() {
+            name = document.getElementById('uname').value;
+            if (name === "")
+                alert("Enter your Name");
+            else if (name.length < 6)
+                alert("length of name must be greater than 6")
+            else if (!nameRegex.test(name))
+                alert("Name must contain Characters only")
+        }
+        function verifyEmail() {
+            email = document.getElementById('email').value;
+            if (email === "")
+                alert("Enter your Email");
+            else if (emailRegex.test(email.toLowerCase()) === false)
+                alert("Email is invalid");
+
+        }
+        function verifyPhno() {
+            phno = document.getElementById('phno').value
+            if (phno === "")
+                alert("Enter ph no")
+            else if (!phnoRegex.test(phno))
+                alert("Invalid Ph No")
+        }
+        function setGenderFlag() {
+            genderFlag = 1;
+        }
+        function verifyGen() {
+            if (genderFlag === 0)
+                alert("select gender");
+        }
+        function verifyPassword() {
+            password = document.getElementById('password').value
+            if (password === "")
+                alert('Enter Password')
+            else if (password.length < 6)
+                alert('Enter password of length greater than 6')
+        }
+        function register() {
+            document.writeln("<h1>Registration Completed!</h1>");
+        }
+    </script>
+</body>
+
+</html>

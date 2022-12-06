@@ -1,0 +1,66 @@
+<!-- Different Selectors (basic)
+    1. Element, ID, class
+    2. Universal Selector
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 1;
+            padding: 1;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        #main_para {
+            text-decoration: underline;
+            font-family: 'Georgia';
+        }
+
+        #main_heading {
+            background-color: yellow;
+            font-family: monospace;
+        }
+
+        #google_link {
+            text-decoration: none;
+            color: green;
+            font-family: Verdana;
+        }
+
+        #danger_link {
+            text-decoration: line-through;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+</body>
+<div class="center">
+    <h1 id="main_heading">Main Heading</h1>
+    <p id="main_para">This is the main paragraph</p>
+</div>
+<div class="center">
+    <h2>Next heading</h2>
+    <p style="font-weight: 600; font-family: monospace;">This is a normal Paragraph, containing styles targetted css
+        selectors
+    </p>
+</div>
+
+<div>
+    <h2>Last Heading</h2>
+    <a id="google_link" href="www.google.com" target="_blank">Link</a>
+    <br>
+    <a id="danger_link" href="www.googel.com" target="_blank">Do not click</a>
+</div>
+
+</html>

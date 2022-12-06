@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <form>
+        <input type="button" value="Display Date" onclick="display()" />
+        <p id="dis"></p>
+    </form>
+    <script>
+        function display() {
+            let d = new Date(); //returns Data object
+
+            let date = d.getDate(); //return 1-31
+            let month = d.getMonth(); // return 0 to 11.
+            let year = d.getFullYear(); // yyyy
+
+            document.getElementById("dis").innerHTML = date + "-" + month + "-" + year;
+        }
+    </script>
+
+    <body>
+
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+<!--
+Reason for not working without using browser:
+		https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSRequestNotHttp
+	Best thing is to use Microsoft Edge Browser.
+	*Reload in Internet Explorer Mode*
+ -->
+<?xml-stylesheet type="text/xsl" href="lib.xsl"?>
+<!DOCTYPE note SYSTEM "lib.dtd">
+<lib>
+	<book>
+		<title>C</title>
+	    <author>BALAGURUSWAMY</author>
+	    <isbn-no>9915</isbn-no>
+	    <publisher>Tata-McGrawHill</publisher>
+	    <edition>3rd</edition>
+	    <price>Rs.250</price>  
+	</book>
+	<book>
+		<title>Java</title>
+		<author>HEBERT SCHILDTZ</author>
+		<isbn-no>3515</isbn-no>
+		<publisher>Pearson</publisher>
+		<edition>8th</edition>
+		<price>Rs.650</price>  
+	</book>
+	<book>
+		<title>UML</title>
+		<author>WILLIAM STALLINGS</author>
+		<isbn-no>3315</isbn-no>
+		<publisher>Pearson</publisher>
+		<edition>3rd</edition>
+		<price>Rs.300</price>  
+	</book>
+	<book>
+		<title>STM</title>
+		<author>BORIS BEIZER</author>
+		<isbn-no>9915</isbn-no>
+		<publisher>Tata-McGrawHill</publisher>
+		<edition>2nd</edition>
+		<price>Rs.400</price>  
+	</book>
+</lib>

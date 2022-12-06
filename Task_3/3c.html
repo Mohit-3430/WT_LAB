@@ -1,0 +1,56 @@
+<!-- 
+    The z-index property specifies the stack order of an element.
+
+An element with greater stack order is always in front of an element with a lower stack order.
+
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) 
+and flex items (elements that are direct children of display:flex elements).
+ -->
+
+<html>
+
+<head>
+    <style>
+        #first {
+            position: relative;
+            font-size: 50px;
+            z-index: 2;
+        }
+
+        #second {
+            position: relative;
+            top: -50;
+            left: 5;
+            color: red;
+            font-size: 80px;
+            z-index: 1
+        }
+
+        #third {
+            position: relative;
+            font-size: 50px;
+            z-index: 3;
+        }
+
+        #fourth {
+            position: relative;
+            top: -50;
+            left: 5;
+            color: red;
+            font-size: 80px;
+            z-index: 4
+        }
+    </style>
+</head>
+
+<body>
+    <u>LAYER 1 ON TOP:</u>
+    <div id="first">LAYER 2</div>
+    <div id="second">LAYER 1</div>
+
+    <u>LAYER 2 ON TOP:</u>
+    <div id="third">LAYER 1</div>
+    <div id="fourth">LAYER 2</div>
+</body>
+
+</html>

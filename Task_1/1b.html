@@ -1,0 +1,23 @@
+<!--Change contents on button click -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Changing the HTML contents and attributes</h3>
+    <p id="target_para">This Paragrah content color is going to change</p>
+    <button onclick="changeAES('blue')">Change to blue</button>
+    <button onclick="changeAES('red')">Change to red</button>
+    <script>
+        function changeAES(cl) {
+            const p = document.getElementById('target_para');
+            p.innerHTML = "This paragraph content and color has been changed!"
+            p.setAttribute('style', `color:${cl}`)
+        }
+    </script>
+</body>
+
+</html>

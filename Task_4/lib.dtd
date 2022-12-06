@@ -1,0 +1,8 @@
+<!ELEMENT lib(book)*>
+<!ELEMENT book (title,author,ISBN,publisher,edition,price)>
+<!ELEMENT title (string)>
+<!ELEMENT author (string)>
+<!ELEMENT ISBN-NO (integer)>
+<!ELEMENT publisher (string)>
+<!ELEMENT edition (string)>
+<!ELEMENT price (string)>
