@@ -6,15 +6,14 @@
 </head>
 
 <body>
-    <form name=frm>
-        <p>Click the button below to compute factorial:</p>
-        <input type=button value='factorial' onclick="getFactorial();">
-    </form>
+    <p>Click the button below to compute factorial:</p>
+    <button value='factorial' onclick="getFactorial();">Compute!</button>
+
     <script>
         function getFactorial() {
             let number = parseInt(prompt("Enter an Integer:"))
             let factorial = 1
-            for (i = 1; i <= number; i++) {
+            for (let i = 1; i <= number; i++) {
                 factorial = factorial * i
             }
             alert("the factorial of " + number + " is " + factorial)
