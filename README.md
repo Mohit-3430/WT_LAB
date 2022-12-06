@@ -18,6 +18,25 @@
 
 - From W3Schools Ref : [link](https://www.w3schools.com/angular/angular_routing.asp)
 
+### Task 8:
+
+Main Files:
+
+- Serverlet [Files](Task_8/src/java/com)
+  - AddCookies.java
+  - VerifyCookies.java
+- HTML [Files]
+  - index.html (Cookie Addition)
+  - VerifyCookie.html (Cookie Verification)
+- Web.xml [file](Task_8/web/WEB-INF/web.xml)
+
+### Task 9:
+
+Main Files
+
+- JSP [index.jsp](Task_9/web/index.jsp)
+- HTML [index.html](Task_9/web/index.html)
+
 ---
 
 # There are 2 assignment questions
@@ -29,7 +48,5 @@
 ##### 2a. Diplay Date
 
 ##### 2b. Factorial and pop-ups
-
-**Task_8 and Task9 files will be added.**
 
 **Note:** All codes are not perfect, they serve the purpose only for exam pov.

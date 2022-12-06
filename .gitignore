@@ -1,5 +1,19 @@
-Task_8/*
-Task_9/*
+Task_8/build
+Task_8/dist
+Task_8/nbproject
+Task_8/src/conf
+Task_8/test
+Task_8/web/META-INF
+Task_8/build.xml
+
+
+Task_9/build
+Task_9/dist
+Task_9/nbproject
+Task_9/src/conf
+Task_9/test
+Task_9/web/META-INF
+Task_9/build.xml
 
 
 
