@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<head>
-		<style>
-			body{
-				font-family:Times New Roman;
-				font-size=20px;
-				background-color:azure;
-			}
-			
-			table{
-				background-color:lightgreen;
-				text-align:center
-			}
-			tr{
-				background-color : lightyellow
-			}
-		</style>
+		<link rel="stylesheet" href="style.css"/>
 	</head>
 	<body>
 			<center>
