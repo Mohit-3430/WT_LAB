@@ -11,12 +11,11 @@ public class VerifyCookies extends HttpServlet {
         PrintWriter out = response.getWriter();
         String name, value;
         boolean flag = false;
-        int i, n;
         name = request.getParameter("t1");
         value = request.getParameter("t2");
         Cookie c[] = request.getCookies();
-        n = c.length;
-        for (i = 0; i < n; i++) {
+        int i=0;
+        for (i = 0; i < c.length; i++) {
             if (name.equals(c[i].getName())) {
                 if (value.equals(c[i].getValue())) {
                     flag = true;
@@ -24,12 +23,12 @@ public class VerifyCookies extends HttpServlet {
                 }
             }
         }
-        out.println("<html>");
+        out.println("<html><body>");
         if (flag == true) {
-            out.println("<body><h2>Welcome: " + c[i].getName() + "</h2></body>");
+            out.println("<h2>Welcome: " + c[i].getName() + "</h2>");
         } else {
-            out.println("<body><h2>You are not an authentic user!</h2> </body>");
-            out.println("</html>");
+            out.println("<h2>You are not an authentic user!</h2>");
+            out.println("</body></html>");
         }
     }
 }

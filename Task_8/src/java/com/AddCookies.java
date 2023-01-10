@@ -23,7 +23,9 @@ public class AddCookies extends HttpServlet {
         out.println("<br>Name: " + c.getName());
         out.println("<br>Value:" + c.getValue());
         out.println("<br><br>");
-        out.println("<a href='http://localhost:8080/Task_8/VerifyCookie.html'>Verify/Signin</a>");
+        out.println("<a href='/Task_8/VerifyCookie.html'>Verify/Signin</a>");
+        out.println("<br><br>");
+        out.println("<a href='/Task_8/'>Add More</a>");
         out.println("</body>");
         out.println("</html>");
     }
