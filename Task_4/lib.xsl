@@ -2,9 +2,6 @@
 <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<head>
 		<style>
-			*{
-				text-align:center;
-			}
 			body{
 				font-family:Times New Roman;
 				font-size=20px;
@@ -13,6 +10,7 @@
 			
 			table{
 				background-color:lightgreen;
+				text-align:center
 			}
 			tr{
 				background-color : lightyellow
@@ -20,13 +18,8 @@
 		</style>
 	</head>
 	<body>
-			<caption>Library</caption>
-			<div style="color:red">
-				<caption>Books</caption>
-			</div>
-			<br></br>
-			<br></br>
 			<center>
+			<h1>Library</h1>
 			<table cellspacing="10" cellpadding="10" border="1">
 				<tr style="background-color:lightgrey">
 					<th>TITLE</th>
