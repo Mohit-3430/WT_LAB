@@ -15,10 +15,14 @@
     <a href="#!green">Green</a>
 
     <p>Click on the links to change the content of the page</p>
+    <!-- ngView is a directive that complements the $route service(ngRoute) by including
+         the rendered template of the current route into the main layout -->
     <div ng-view></div>
     <script>
+        // The ngRoute module helps your application to become a Single Page Application.
         const app = angular.module("myApp", ["ngRoute"]);
         app.config(function ($routeProvider) {
+            // Now your application has access to the route module, which provides the $routeProvider.
             $routeProvider
                 .when("/", {
                     template: "<h1> Main </h1> <p> click on the link to change text</p>"
