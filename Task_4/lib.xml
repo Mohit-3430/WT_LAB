@@ -6,7 +6,7 @@ Reason for not working without using browser:
 	*Reload in Internet Explorer Mode*
  -->
 <?xml-stylesheet type="text/xsl" href="lib.xsl"?>
-<!DOCTYPE note SYSTEM "lib.dtd">
+<!DOCTYPE lib SYSTEM "lib.dtd">
 <lib>
 	<book>
 		<title>C</title>
