@@ -18,6 +18,15 @@
 ### Task 6 :
 
 - YT: [link](https://www.youtube.com/watch?v=AffS_4Mrrww)
+  - Using NetBeans
+- ALT use BDK
+  - Just have .mft file
+    ```
+    Name: .class
+    Java-Bean: True
+    ```
+  - `jar cfm .jar .mft \*.class`
+  - Load the jar into BeanExplorer
 
 ### Task 8:
 
